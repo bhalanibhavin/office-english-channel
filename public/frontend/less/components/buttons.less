@@ -1,0 +1,129 @@
+// BUTTONS =======================================
+
+.btn {
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    .body-font;
+    font-weight: 600;
+    font-size: 13px;    
+    letter-spacing: 0.5px; 
+}
+.btn-lg {
+    padding: 15px 30px;
+}
+
+.btn-md {
+    padding: 12px 20px;
+}
+
+.btn-sm {
+    padding: 8px 15px;
+}
+
+.btn-primary {
+    border: none;
+    background: @theme-primary;
+    color: #fff;    
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        background: darken(@theme-primary, 15%);
+        color: #fff;
+    }
+    &.inverse{
+        background: #fff;
+        color: @theme-primary;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            background: #fff;
+            color: darken(@theme-primary, 15%);
+        }
+    }
+}
+
+.btn-outline {    
+    border-color: @theme-primary;
+    border: 1px solid;
+    color: @theme-primary;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        border-color: darken(@theme-primary, 15%);
+        border: 1px solid;
+    }
+    &.inverse{
+        color: #fff;
+        border-color: #fff;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            border-color: darken(#fff, 15%);
+        }
+    }
+}
+
+.btn-gradient {
+    border: none;
+    background: @theme-primary;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, @theme-primary 1%, @theme-secondary 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, @theme-primary 1%, @theme-secondary 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, @theme-primary 1%, @theme-secondary 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@theme-primary, endColorstr=@theme-secondary, GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    color: #fff;    
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        background: darken(@theme-primary, 15%);
+        /* Old browsers */
+        background: -moz-linear-gradient(-45deg, darken(@theme-primary, 5%) 1%, darken(@theme-secondary, 5%) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, darken(@theme-primary, 5%) 1%, darken(@theme-secondary, 5%) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, darken(@theme-primary, 5%) 1%, darken(@theme-secondary, 5%) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=darken(@theme-primary, 5%), endColorstr=darken(@theme-secondary, 5%), GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+        color: #fff;
+    }
+}
+.bg-gradient {
+    .col-sm-10 {
+        z-index: 2;
+    }
+    .btn-primary {
+        background: white;
+        border-color: white;
+        color: white;        
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {            
+            background-color: white;
+            border-color: white;
+            color: white;
+        }
+    }
+    .btn-outline {        
+        border-color: white;
+        color: white;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {            
+            border-color: white;
+            color: white;
+        }
+    }
+}

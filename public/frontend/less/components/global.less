@@ -1,0 +1,141 @@
+
+//GLOBAL COMPONENTS =======================================
+
+
+html,
+body {    
+    width: 100%;
+    height: 100%;
+}
+a {    
+    color: @theme-primary;
+    .transition-all;
+    &:hover,
+    &:focus {
+        color: darken(@theme-primary, 10%);
+    }
+}
+
+hr {    
+    max-width: 100px;
+    margin: 0.5em auto;
+    border-width: 1px;
+    border-color: fade(@theme-primary, 10%);    
+    &.hr-color{
+        border-color: fade(@theme-primary, 70%);
+    }
+}
+hr.light {
+    border-color: white;
+}
+
+
+// Bootstrap Overrides
+
+.icon {    
+    margin-bottom: 10px;
+    [class^="icon-"], [class*=" icon-"] {
+        font-size: 45px;
+    }   
+}
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+
+/*===== Extras==========*/
+
+::-moz-selection {
+    background: @gray-darker;
+    color: white;
+    text-shadow: none;    
+}
+
+::selection {
+    background: @gray-darker;
+    color: white;
+    text-shadow: none;    
+}
+
+img::selection {
+    background: transparent;
+    color: white;    
+}
+
+img::-moz-selection {
+    background: transparent;
+    color: white;    
+}
+
+body {
+    webkit-tap-highlight-color: @gray-darker;
+}
+
+
+
+
+//--Parallax ------//
+
+.parallax,.home {    
+    overflow: hidden;
+    position: relative;
+    >.bg-image-placer {
+        top: -63px;      
+        height: 100%;
+        min-height: 100vh;        
+        transition: opacity .3s linear;
+        -webkit-transition: opacity .3s linear;
+        transition: opacity 0.3s ease !important;
+        -webkit-transition: opacity 0.3s ease !important;
+        -webkit-transform-style: preserve-3d;
+    }
+    >.highlight {
+        h1 {
+            color: #fff;
+            text-shadow: none;
+        }
+        p {
+            color: #fff;
+        }
+    }
+}
+
+.bg-gradient {
+    position: absolute;    
+    top: 0;
+    left: 0;  
+	width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-151deg, #4d32ab 23%, #e564a6 111%);
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+       .bg-gradient svg {
+            display: none;
+       }
+    }
+.bg-image-placer {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 100%; 
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+    background: #fff;
+    opacity: 0;  
+    transition: opacity .3s linear;
+    -webkit-transition: opacity .3s linear;  
+    img {
+        display: none;
+    }
+}
+.slide-anim-bg {
+    position: absolute;
+    z-index: 0; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

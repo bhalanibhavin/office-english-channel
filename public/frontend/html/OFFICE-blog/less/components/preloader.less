@@ -1,0 +1,53 @@
+//PRELOADER======================
+
+.loader-wrapper {
+    position: fixed;
+    z-index: 1040;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    background-color: #fff;
+}
+.loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0 -25px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: @theme-primary;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+ 
+.loader:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: fade(@theme-primary, 50%);
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+ 
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    right: 13px;
+    bottom: 13px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    border-top-color: @theme-secondary;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}

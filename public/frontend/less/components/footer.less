@@ -1,0 +1,61 @@
+//FOOTER STYLES==================
+
+footer{
+    background-color: #fff;
+    .list-inline{
+        a{  
+            color: #fff;
+            h6{
+                color: #fff;
+                font-weight: 400;
+                font-size: 14px;                
+            }
+            &:hover{                
+                border:none;                
+                color: @theme-primary; 
+                text-decoration: none;               
+            }
+            h1,h2,h3,h4,h5,h6{
+                &:not(:hover) {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    .copyright, .support{        
+        color:@subtext-color;
+        font-size: 12px;
+    }
+    &.bg-gradient, &.bg-dark, &.bg-primary{
+        .copyright, .support{
+            color: #fff;
+        }
+    }
+    &:not(.bg-primary):not(.bg-dark):not(.bg-gradient) a{
+        color: #7f7e7e;
+        &:hover{            
+            border:none;
+            color: @theme-primary;
+            text-decoration: none;
+        }
+        h1,h2,h3,h4,h5,h6{
+            color: #7f7e7e;
+            &:not(:hover) {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+@media all and (max-width: 767px) {
+    footer{
+        .list-inline{
+            text-align: center;
+        }
+        .col-xs-12{
+            text-align: center;
+        }
+        [class^="col-"]{
+            margin-bottom: 5px;
+        }
+    }
+}

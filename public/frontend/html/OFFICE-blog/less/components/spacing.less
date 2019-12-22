@@ -1,0 +1,160 @@
+// SPACING =======================================
+
+
+
+/* ============================Height Setup ==============================*/
+
+.ht-100,
+.ht-90,
+.ht-80,
+
+
+
+.ht-70,
+.ht-60,
+.ht-50,
+.ht-40,
+.ht-30,
+.ht-20,
+.ht-10 {
+    height: auto;
+    padding: 5em 0;
+}
+@media all and (max-width: 767px) {
+    .ht-100,
+    .ht-90,
+    .ht-80,
+    .ht-70,
+    .ht-60,
+    .ht-50,
+    .ht-40,
+    .ht-30,
+    .ht-20,
+    .ht-10 {
+        height: auto;
+        padding: 4em 0;
+    }
+}
+@media all and (min-height: 500px) and (min-width: 767px) {
+    .ht-10 {
+        height: 10vh;
+    }
+    .ht-20 {
+        height: 20vh;
+    }
+    .ht-30 {
+        height: 30vh;
+    }
+    .ht-40 {
+        height: 40vh;
+    }
+    .ht-50 {
+        height: 50vh;
+    }
+    .ht-60 {
+        height: 60vh;
+    }
+    .ht-70 {
+        height: 70vh;
+    }
+    .ht-80 {
+        height: 80vh;
+    }
+    .ht-90 {
+        height: 90vh;
+    }
+    .ht-100 {
+        height: 100vh;
+    }
+}
+
+/*===============================Spacing setup =========================================*/
+
+section,
+footer {
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+
+section.pd-xxs,
+footer.pd-xxs {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+section.pd-xs,
+footer.pd-xs {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+section.pd-sm,
+footer.pd-sm {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+section.pd-md,
+footer.pd-md {
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+section.pd-lg,
+footer.pd-lg {
+    padding-top: 14em;
+    padding-bottom: 14em;
+}
+
+section.pd-xlg,
+footer.pd-xlg {
+    padding-top: 25em;
+    padding-bottom: 25em;
+}
+
+section.pd--0,
+footer.pd--0 {
+    padding: 0;
+}
+
+@media all and (max-width: 767px) {
+    section.pd-lg,
+    footer.pd-lg,
+    section.pd-md,
+    footer.pd-md {
+        padding: 5em 0;
+    }
+    section.pd-xlg,
+    footer.pd-xlg {
+        padding: 8em 0;
+    }
+}
+
+/*===========Text Alignment============*/
+
+.algn-center {
+    text-align: center;
+}
+
+.algn-right {
+    text-align: right;
+}
+
+.algn-left {
+    text-align: left;
+}
+
+
+/*=======Positions =============*/
+
+.pos-vcenter {
+    position: relative;
+}
+@media all and (min-width: 767px) {
+    .pos-vcenter {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+}

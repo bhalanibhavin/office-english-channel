@@ -1,0 +1,128 @@
+
+// TYPOGRAPHY =======================================
+
+
+
+body {
+    .body-font();
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #252525;
+    font-family: @fontfamily;
+    font-weight: 300;
+    font-variant-ligatures: common-ligatures;    
+}
+
+p {
+    margin: 0 0 0.75em;
+    font-family: @fontfamily;
+    font-size: 14px;
+    line-height: 1.75em;    
+    &.head {
+        font-size: 1.15em;
+        line-height: 1.5em;
+        font-weight: 400;
+    }
+}
+
+p.head+.btn {
+    margin-top: 1em;
+}
+p +.btn {
+    margin-top: 1em;
+}
+h1,
+.h1 {
+    font-size: 3em;
+    line-height: 1.3em;
+    font-weight: 300;
+    margin-bottom: 0.75em;
+    letter-spacing: -0.01em;
+}
+
+h2,
+.h2 {    
+    font-size: 2.35em;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    font-weight: 300;
+}
+
+h3,
+.h3 {
+    font-size: 1.75em;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h4,
+.h4 {
+    font-size: 1.35em;
+    line-height: 1.65em;
+    margin-bottom: 0.5em;
+}
+
+h5,
+.h5 {
+    font-size: 1em;
+    line-height: 1.8em;
+    font-weight: 600;
+}
+
+.highlight {
+    h1 {
+        font-size: 4em;
+        line-height: 1em;
+        font-weight: 700;
+        margin-bottom: 0.4em;
+        letter-spacing: -0.01em;
+        text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.6);
+    }
+    p {
+        &.head {
+            font-weight: 500;
+        }
+    }
+}
+
+/* classes to make text uppercase and lowercase ================================*/
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-lower {
+    text-transform: lowercase;
+}
+
+
+/* Text size of icons================================*/
+
+.ico-lg {
+    font-size: 5em;
+}
+
+.ico-md {
+    font-size: 3em;
+}
+
+.ico-sm {
+    font-size: 2em;
+}
+
+.ico-xs {
+    font-size: 1.2em;
+}

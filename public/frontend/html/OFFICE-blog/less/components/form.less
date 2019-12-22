@@ -1,0 +1,54 @@
+//FORM ELEMENTS======================
+
+input[type],
+textarea,
+select {
+    width: 100%;
+    min-height: 42px;
+    padding: 0.5em 1em;
+    border: 1px solid #e1e1e1;
+    border-radius: 30px; 
+    background: #fcfcfc;
+    color: #252525;
+    line-height: 26px;
+    -webkit-appearance: none; 
+    &:focus, &:active{
+        outline: none;
+    }
+}
+
+form>div[class*='col-']:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+form>div[class*='col-'] button {        
+    width: 100%;
+    padding: 12px 12px;
+}
+
+.bg-dark,
+.bg-primary,
+.bg-gradient {
+    h1,.h1,
+    h2,.h2,
+    h3,.h3,
+    h4,.h4,
+    h5,.h5,
+    p {
+        color: #fff;
+    }
+}
+
+.bg-light {
+    h1,.h1,
+    h2,.h2,
+    h3,.h3,
+    h4,.h4,
+    h5 ,.h5{
+        color: #252525;
+    }
+    p {
+        color: #7f7e7e;
+        ;
+    }
+}
